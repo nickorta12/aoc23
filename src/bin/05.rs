@@ -1,10 +1,8 @@
-#![allow(unused)]
-
 use itertools::Itertools;
 use nom::{
     bytes::complete::tag,
     character::complete::{self, alpha1, multispace1, newline, space1},
-    combinator::{all_consuming, complete},
+    combinator::all_consuming,
     multi::separated_list1,
     sequence::{preceded, separated_pair, terminated, tuple},
     IResult, Parser,
